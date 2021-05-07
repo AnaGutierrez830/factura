@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center ;
+    }
+    
+    
+    
+    .form-register {
+        width: 450px; height: 438px;
+        background: #FFF3F3;
+        padding: 68px;
+        margin: auto;
+        margin-top: 53px;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+        background-size: cover 100%;
+        background-position: center ;
+    
+    
+    }
+    
+    
+    
+    
+    
+    .titulo {
+        font-family:'Montserrat', sans-serif;
+        color: #000000;
+        position: center;
+        background-size: 500px; height: 90px;
+        font-size: 25px;
+        background-position: center;
+        margin-top: 90px;
+        margin-bottom: 0px;
+        
+    
+    }
+    
+    .texto {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .parrafo {
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #6B6B6B;
+    margin-top: 80px;
+    line-height: 30px;
+    letter-spacing: normal;
+  
+    
+    }

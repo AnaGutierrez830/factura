@@ -8,11 +8,11 @@ background-position: center ;
 
 
 .form-register {
-    width: 450px; height: 450px;
+    width: 450px; height: 438px;
     background: #FFF3F3;
     padding: 70px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 53px;
     border-radius: 4px;
     font-family: 'Montserrat', sans-serif;
     background-size: cover 100%;
@@ -61,7 +61,7 @@ margin-bottom: 10px;
     color: #000000;
     position: center;
     background-size: 500px; height: 90px;
-    font-size: 30px;
+    font-size: 25px;
     background-position: center;
     margin-top: 90px;
     margin-bottom: 0px;
@@ -74,4 +74,5 @@ margin-bottom: 10px;
     margin-bottom: 0px;
     font-family:'Montserrat', sans-serif;
     font-size: 16px;
+    text-align: center;
 }
