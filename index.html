@@ -31,7 +31,8 @@
 <p class="subtitulos"><b>Correo electrónico</b></p>
         <input class="controls"  type="email" name="Correo electrónico" id="correo" placeholder="Ingrese su correo electrónico">
 
-        <a href="datosfactura/gracias.html"><input class="botons" type="submit" value="SOLICITAR FACTURA"></a>
+        <!-- <a href="datosfactura/gracias.html"><input class="botons" type="submit" value="SOLICITAR FACTURA"></a> -->
+        <input class="botons" type="submit" value="SOLICITAR FACTURA">
 
     </section>
 
@@ -41,7 +42,7 @@
 </body>
 
 <script>
-const contactform= document.querySelector(".contact-form");
+const contactform= document.querySelector(".form-register");
 let order = document.getElementById("order");
 let rfc = document.getElementById("rfc");
 let correo = document.getElementById("correo");
@@ -56,17 +57,17 @@ contactform.addEventListener("submit", (e)=>{
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST","/");
-    xhr.setRequestHeader("content-type, "application/json"); 
+    xhr.open("POST","https://ks-factura.herokuapp.com/");
+    xhr.setRequestHeader("content-type", "application/json"); 
     xhr.onload = function(){
         console.log(xhr.responseText);
-        if(xhr.responseText) = "success"){
-            alert("Email sent");
+        if(xhr.responseText == "success"){
+            alert("Información enviada");
             order.value = "";
             rfc.value = "";
             correo.value = "";
         }else{
-            alert("Something went wrong!")
+            alert("Algo salió mal, vuleve a intentarlo.")
         }
     }
 
